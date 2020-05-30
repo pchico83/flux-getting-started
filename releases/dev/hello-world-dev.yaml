@@ -2,14 +2,14 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: dev
-  namespace: $YOUR_GITHUB_ID
+  namespace: tt-pchico83
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: "semver:*"
 spec:
   releaseName: dev
   chart:
-    git: git@github.com:$YOUR_GITHUB_ID/flux-getting-started
+    git: git@github.com:pchico83/flux-getting-started
     path: chart
     ref: master
   values:
