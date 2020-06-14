@@ -2,7 +2,7 @@ apiVersion: helm.fluxcd.io/v1
 kind: HelmRelease
 metadata:
   name: dev
-  namespace: tt-pchico83
+  namespace: flux-pchico83
   annotations:
     fluxcd.io/automated: "true"
     filter.fluxcd.io/chart-image: "semver:*"
